@@ -6,24 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/welcome_to_abdurrahman_g_official"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageViewHomePageImageOfAbdurRahmanG"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/home_page_image_of_abdurrahman_g"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
         app:srcCompat="@drawable/abdurrahman_g_main" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewChooseOneFromBelow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/abdurrahmang"
-        android:textSize="30sp"
+        android:text="@string/choose_one_from_below"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/imageViewHomePageImageOfAbdurRahmanG"
         app:layout_constraintStart_toStartOf="@+id/imageViewHomePageImageOfAbdurRahmanG"
         app:layout_constraintTop_toBottomOf="@+id/imageViewHomePageImageOfAbdurRahmanG" />
+
+    <Button
+        android:id="@+id/buttonAbdurRahmanG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/abdurrahmang"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChooseOneFromBelow" />
+
+    <Button
+        android:id="@+id/buttonTechilyFly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/techilyfly"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAaMGaLI"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbdurRahmanG" />
+
+    <Button
+        android:id="@+id/buttonAaMGaLI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/aamgali"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonTechilyFly"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbdurRahmanG" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

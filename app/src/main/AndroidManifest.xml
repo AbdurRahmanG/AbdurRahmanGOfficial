@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AbdurRahmanG">
+        <activity android:name=".AamgaliActivity"></activity>
+        <activity android:name=".TechilyflyActivity" />
+        <activity android:name=".AbdurrahmangActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
